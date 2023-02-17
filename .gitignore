@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+/.parcel-cache
+
+# build files
+index.e8265c92.css.map
+particle animation.59712999.js
+particle animation.59712999.js.map
+
+# misc
+.DS_Store
