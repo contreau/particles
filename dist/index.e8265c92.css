@@ -8,11 +8,6 @@ html, body {
   padding: 0;
 }
 
-img, svg {
-  max-width: 100%;
-  display: block;
-}
-
 body {
   color: #fff;
   background-image: linear-gradient(#000, #3b141e, #731b2d, #ad2234, #e73131);
@@ -51,217 +46,219 @@ h1 {
   width: .2rem;
   height: 1rem;
   opacity: 0;
-  z-index: -1;
   background-color: #fff;
   border-radius: 50%;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-.bottom:nth-child(1) {
-  animation: 2.5s ease-in-out infinite particles;
+.bottom {
+  animation-name: particles;
+}
+
+.top {
+  animation-name: particles_reverse;
 }
 
 .bottom:nth-child(2) {
-  animation: 2.5s ease-in-out .2s infinite particles;
+  animation-delay: .2s;
 }
 
 .bottom:nth-child(3) {
-  animation: 2.5s ease-in-out .4s infinite particles;
+  animation-delay: .4s;
 }
 
 .bottom:nth-child(4) {
-  animation: 2.5s ease-in-out .6s infinite particles;
+  animation-delay: .6s;
 }
 
 .bottom:nth-child(5) {
-  animation: 2.5s ease-in-out .8s infinite particles;
+  animation-delay: .8s;
 }
 
 .bottom:nth-child(6) {
-  animation: 2.5s ease-in-out 1s infinite particles;
+  animation-delay: 1s;
 }
 
 .bottom:nth-child(7) {
-  animation: 2.5s ease-in-out 1.2s infinite particles;
+  animation-delay: 1.2s;
 }
 
 .bottom:nth-child(8) {
-  animation: 2.5s ease-in-out 1.4s infinite particles;
+  animation-delay: 1.4s;
 }
 
 .bottom:nth-child(9) {
-  animation: 2.5s ease-in-out 1.6s infinite particles;
+  animation-delay: 1.6s;
 }
 
 .bottom:nth-child(10) {
-  animation: 2.5s ease-in-out 1.8s infinite particles;
+  animation-delay: 1.8s;
 }
 
 .bottom:nth-child(11) {
-  animation: 2.5s ease-in-out 2s infinite particles;
+  animation-delay: 2s;
 }
 
 .bottom:nth-child(12) {
-  animation: 2.5s ease-in-out 2.2s infinite particles;
+  animation-delay: 2.2s;
 }
 
 .bottom:nth-child(13) {
-  animation: 2.5s ease-in-out 2.4s infinite particles;
+  animation-delay: 2.4s;
 }
 
 .bottom:nth-child(14) {
-  animation: 2.5s ease-in-out 2.6s infinite particles;
+  animation-delay: 2.6s;
 }
 
 .bottom:nth-child(15) {
-  animation: 2.5s ease-in-out 2.8s infinite particles;
+  animation-delay: 2.8s;
 }
 
 .bottom:nth-child(16) {
-  animation: 2.5s ease-in-out 3s infinite particles;
+  animation-delay: 3s;
 }
 
 .bottom:nth-child(17) {
-  animation: 2.5s ease-in-out 3.2s infinite particles;
+  animation-delay: 3.2s;
 }
 
 .bottom:nth-child(18) {
-  animation: 2.5s ease-in-out 3.4s infinite particles;
+  animation-delay: 3.4s;
 }
 
 .bottom:nth-child(19) {
-  animation: 2.5s ease-in-out 3.6s infinite particles;
+  animation-delay: 3.6s;
 }
 
 .bottom:nth-child(20) {
-  animation: 2.5s ease-in-out 3.8s infinite particles;
+  animation-delay: 3.8s;
 }
 
 .bottom:nth-child(21) {
-  animation: 2.5s ease-in-out 4s infinite particles;
+  animation-delay: 4s;
 }
 
 .bottom:nth-child(22) {
-  animation: 2.5s ease-in-out 4.2s infinite particles;
+  animation-delay: 4.2s;
 }
 
 .bottom:nth-child(23) {
-  animation: 2.5s ease-in-out 4.4s infinite particles;
+  animation-delay: 4.4s;
 }
 
 .bottom:nth-child(24) {
-  animation: 2.5s ease-in-out 4.6s infinite particles;
+  animation-delay: 4.6s;
 }
 
 .bottom:nth-child(25) {
-  animation: 2.5s ease-in-out 4.8s infinite particles;
+  animation-delay: 4.8s;
 }
 
 .bottom:nth-child(26) {
-  animation: 2.5s ease-in-out 5s infinite particles;
-}
-
-.top:nth-child(1) {
-  animation: 2.5s ease-in-out infinite particles_reverse;
+  animation-delay: 5s;
 }
 
 .top:nth-child(2) {
-  animation: 2.5s ease-in-out .2s infinite particles_reverse;
+  animation-delay: .2s;
 }
 
 .top:nth-child(3) {
-  animation: 2.5s ease-in-out .4s infinite particles_reverse;
+  animation-delay: .4s;
 }
 
 .top:nth-child(4) {
-  animation: 2.5s ease-in-out .6s infinite particles_reverse;
+  animation-delay: .6s;
 }
 
 .top:nth-child(5) {
-  animation: 2.5s ease-in-out .8s infinite particles_reverse;
+  animation-delay: .8s;
 }
 
 .top:nth-child(6) {
-  animation: 2.5s ease-in-out 1s infinite particles_reverse;
+  animation-delay: 1s;
 }
 
 .top:nth-child(7) {
-  animation: 2.5s ease-in-out 1.2s infinite particles_reverse;
+  animation-delay: 1.2s;
 }
 
 .top:nth-child(8) {
-  animation: 2.5s ease-in-out 1.4s infinite particles_reverse;
+  animation-delay: 1.4s;
 }
 
 .top:nth-child(9) {
-  animation: 2.5s ease-in-out 1.6s infinite particles_reverse;
+  animation-delay: 1.6s;
 }
 
 .top:nth-child(10) {
-  animation: 2.5s ease-in-out 1.8s infinite particles_reverse;
+  animation-delay: 1.8s;
 }
 
 .top:nth-child(11) {
-  animation: 2.5s ease-in-out 2s infinite particles_reverse;
+  animation-delay: 2s;
 }
 
 .top:nth-child(12) {
-  animation: 2.5s ease-in-out 2.2s infinite particles_reverse;
+  animation-delay: 2.2s;
 }
 
 .top:nth-child(13) {
-  animation: 2.5s ease-in-out 2.4s infinite particles_reverse;
+  animation-delay: 2.4s;
 }
 
 .top:nth-child(14) {
-  animation: 2.5s ease-in-out 2.6s infinite particles_reverse;
+  animation-delay: 2.6s;
 }
 
 .top:nth-child(15) {
-  animation: 2.5s ease-in-out 2.8s infinite particles_reverse;
+  animation-delay: 2.8s;
 }
 
 .top:nth-child(16) {
-  animation: 2.5s ease-in-out 3s infinite particles_reverse;
+  animation-delay: 3s;
 }
 
 .top:nth-child(17) {
-  animation: 2.5s ease-in-out 3.2s infinite particles_reverse;
+  animation-delay: 3.2s;
 }
 
 .top:nth-child(18) {
-  animation: 2.5s ease-in-out 3.4s infinite particles_reverse;
+  animation-delay: 3.4s;
 }
 
 .top:nth-child(19) {
-  animation: 2.5s ease-in-out 3.6s infinite particles_reverse;
+  animation-delay: 3.6s;
 }
 
 .top:nth-child(20) {
-  animation: 2.5s ease-in-out 3.8s infinite particles_reverse;
+  animation-delay: 3.8s;
 }
 
 .top:nth-child(21) {
-  animation: 2.5s ease-in-out 4s infinite particles_reverse;
+  animation-delay: 4s;
 }
 
 .top:nth-child(22) {
-  animation: 2.5s ease-in-out 4.2s infinite particles_reverse;
+  animation-delay: 4.2s;
 }
 
 .top:nth-child(23) {
-  animation: 2.5s ease-in-out 4.4s infinite particles_reverse;
+  animation-delay: 4.4s;
 }
 
 .top:nth-child(24) {
-  animation: 2.5s ease-in-out 4.6s infinite particles_reverse;
+  animation-delay: 4.6s;
 }
 
 .top:nth-child(25) {
-  animation: 2.5s ease-in-out 4.8s infinite particles_reverse;
+  animation-delay: 4.8s;
 }
 
 .top:nth-child(26) {
-  animation: 2.5s ease-in-out 5s infinite particles_reverse;
+  animation-delay: 5s;
 }
 
 .phone-up, .tablet-landscape-up {
