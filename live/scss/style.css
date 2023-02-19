@@ -16,7 +16,7 @@ body {
 }
 
 .blue-gradient {
-  background-image: linear-gradient(to top, #0239fd, #0072ff, #0097ff, #00b4fd, #0ccce9);
+  background-image: linear-gradient(to top, #0968f8, #0051c0, #003b8b, #002558, #020f2a);
 }
 
 .green-gradient {
@@ -57,7 +57,7 @@ body {
   background-color: #fff;
   opacity: 0;
   border-radius: 50%;
-  animation-duration: 2.5s;
+  animation-duration: 4.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -321,6 +321,7 @@ body {
   }
   p {
     text-transform: uppercase;
+    margin-top: 1.5rem;
   }
   p.hoverMe {
     animation: hoverMe__fadeIn 4s 2s forwards;
@@ -343,10 +344,6 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .color-options__container,
-  .motion-options__container {
-    margin-bottom: 1rem;
-  }
   .color-option {
     display: grid;
     place-items: center;
@@ -364,13 +361,50 @@ body {
     background-image: radial-gradient(circle, #ad2234, #e73131, #731b2d, #3b141e);
   }
   .color-option__2 {
-    background-image: radial-gradient(circle, #0239fd, #0072ff, #0097ff, #00b4fd, #0ccce9);
+    background-image: radial-gradient(circle, #0968f8, #0051c0, #003b8b, #002558, #020f2a);
   }
   .color-option__3 {
     background-image: radial-gradient(circle, #00ff85, #00c169, #00864c, #00502e, #011f11);
   }
-  .selected {
+  .color-selected {
     border: solid 1px #fff;
+  }
+  .speed-option,
+  .motion-option {
+    min-height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.2s all;
+  }
+  .speed-option:hover, .speed-option:active,
+  .motion-option:hover,
+  .motion-option:active {
+    cursor: pointer;
+    border: solid 3px #fff;
+    background-color: rgb(255, 0, 0);
+  }
+  .speed-selected,
+  .motion-selected {
+    background-color: rgb(255, 0, 0);
+    border: solid 3px #fff;
+  }
+  .speedWrap,
+  .motionWrap {
+    position: relative;
+  }
+  .speedLine,
+  .motionLine {
+    display: none;
+    position: absolute;
+    width: 96%;
+    top: 47%;
+    bottom: 50%;
+    left: 1%;
+    margin: 0;
+    color: #fff;
+    z-index: -1;
+    border: solid 1px;
   }
 }
 
