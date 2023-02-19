@@ -12,8 +12,8 @@ html, body {
   background-image: linear-gradient(#000, #3b141e, #731b2d, #ad2234, #e73131);
 }
 
-.purple-gradient {
-  background-image: linear-gradient(to top, #664beb, #5339c9, #4028a7, #2c1888, #180769);
+.blue-gradient {
+  background-image: linear-gradient(to top, #0239fd, #0072ff, #0097ff, #00b4fd, #0ccce9);
 }
 
 .green-gradient {
@@ -38,33 +38,18 @@ body {
 }
 
 .centerpiece__container {
-  place-items: center;
-  margin: auto;
-  display: grid;
-}
-
-.color-options__container {
   display: none;
-}
-
-h1 {
-  opacity: 0;
-  margin: 0 auto;
-  transition: all .4s;
-}
-
-h1:hover {
-  opacity: 1;
 }
 
 .particleBin {
   justify-content: space-between;
   gap: 1.4em;
+  padding: 0 .5em;
   display: flex;
 }
 
 .particle {
-  width: .2rem;
+  width: .3rem;
   height: 1rem;
   opacity: 0;
   background-color: #fff;
@@ -293,7 +278,6 @@ h1:hover {
 
   50% {
     opacity: .5;
-    background-color: #f1766e;
   }
 
   100% {
@@ -309,12 +293,25 @@ h1:hover {
 
   50% {
     opacity: .5;
-    background-color: #f1766e;
   }
 
   100% {
     opacity: 0;
     transform: translateY(5000%);
+  }
+}
+
+@keyframes hoverMe__fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
@@ -329,15 +326,43 @@ h1:hover {
     display: block;
   }
 
-  .color-options__container {
+  p {
+    text-transform: uppercase;
+  }
+
+  p.hoverMe {
+    animation: 4s 2s forwards hoverMe__fadeIn;
+  }
+
+  .centerpiece__container {
+    place-items: center;
+    margin: auto;
+    display: grid;
+  }
+
+  .centerpiece__container > * {
+    opacity: 0;
+    transition: all .4s;
+  }
+
+  .centerpiece__container:hover > * {
+    opacity: 1;
+  }
+
+  .centerpiece__item {
+    justify-content: space-between;
     align-items: center;
     gap: 2em;
     display: flex;
   }
 
+  .color-options__container, .motion-options__container {
+    margin-bottom: 1rem;
+  }
+
   .color-option {
-    height: 4rem;
-    width: 4rem;
+    height: 2.8rem;
+    width: 2.8rem;
     border: 1px solid #fff0;
     border-radius: 50%;
     place-items: center;
@@ -355,7 +380,7 @@ h1:hover {
   }
 
   .color-option__2 {
-    background-image: radial-gradient(circle, #664beb, #5339c9, #4028a7, #2c1888, #180769);
+    background-image: radial-gradient(circle, #0239fd, #0072ff, #0097ff, #00b4fd, #0ccce9);
   }
 
   .color-option__3 {
