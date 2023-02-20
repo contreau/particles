@@ -112,3 +112,15 @@ motion_option_2.addEventListener("click", () => {
 motion_option_3.addEventListener("click", () => {
   cycleMotion(motion_option_3, "1rem");
 });
+
+// adds temporary message to mobile viewers
+const mobile_under_query = window.matchMedia("(max-width: 599px)");
+if (mobile_under_query.matches) {
+  const particleBin__top = document.querySelector(".particleBin__top");
+  const mobileText = document.createElement("p");
+  mobileText.style.opacity = 0;
+  mobileText.style.textAlign = "center";
+  mobileText.style.animation = "hoverMe__fadeIn 4s 2s forwards";
+  mobileText.innerText = "View on a larger screen to customize this display...";
+  particleBin__top.insertAdjacentElement("afterend", mobileText);
+}

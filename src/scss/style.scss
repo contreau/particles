@@ -292,7 +292,6 @@ body {
   0% {
     transform: translateY(0%);
   }
-
   50% {
     opacity: 0.5;
     // background-color: rgb(241, 118, 110);
@@ -315,7 +314,17 @@ body {
   }
 }
 
+p {
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+p.hoverMe {
+  animation: hoverMe__fadeIn 4s 2s forwards;
+}
+
 // media queries
+
 @mixin for-tablet-portrait-up {
   @media (min-width: 600px) {
     @content;
@@ -337,15 +346,6 @@ body {
 @include for-tablet-landscape-up {
   .tablet-landscape-up {
     display: block;
-  }
-
-  p {
-    text-transform: uppercase;
-    margin-top: 1.5rem;
-  }
-
-  p.hoverMe {
-    animation: hoverMe__fadeIn 4s 2s forwards;
   }
 
   .centerpiece__container {
@@ -424,6 +424,7 @@ body {
     border-radius: 50%;
     background-color: #fff;
     transition: 0.2s all;
+    border: solid 3px transparent;
     &:hover,
     &:active {
       cursor: pointer;
