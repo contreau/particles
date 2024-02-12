@@ -1,8 +1,7 @@
 {
   "name": "particle-animation",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple particle animation display.",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
